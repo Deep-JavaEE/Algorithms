@@ -137,7 +137,11 @@ public class SortAlgorithm {
 		for (int i = 0; i < arrayLength; i++) {
 			System.out.println("----------");
 			System.out.print("| " + i + " | ");
-			System.out.println(theArray[i] + " |");
+			if (theArray[i] < 10) {
+				System.out.println(theArray[i] + "  |");
+			}else{
+				System.out.println(theArray[i] + " |");
+			}
 		}
 		System.out.println("----------");
 	}
